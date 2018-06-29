@@ -15,8 +15,9 @@ import java.util.Objects;
 
 
 @Log4j
-@RestController(value = "/v1")
-@Api(value = "/",description = "get请求接口demo")
+@RestController
+@Api(value = "/get",description = "get请求接口demo")
+@RequestMapping(value = "/get")
 public class GetMethodDemo {
     /**
      * get请求
