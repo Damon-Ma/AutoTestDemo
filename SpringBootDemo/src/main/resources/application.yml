@@ -1,0 +1,8 @@
+server:
+  port: 8899
+logging:
+  path: logs
+  file: SpringbootLog.log
+spring:
+  application:
+    name: SpringbootDemo
