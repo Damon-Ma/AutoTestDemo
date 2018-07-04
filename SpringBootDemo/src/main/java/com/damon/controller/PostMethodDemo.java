@@ -65,7 +65,7 @@ public class PostMethodDemo {
             Cookie cookie = new Cookie("login","true");
             //将cookie加入响应结果中
             response.addCookie(cookie);
-            return "获取cookie成功:"+cookie.getValue()+":"+cookie.getName();
+            return "获取cookie成功:"+cookie.getName()+":"+cookie.getValue();
         }
         log.info(json.toString());
         return "获取cookies失败";

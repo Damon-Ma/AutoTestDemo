@@ -6,13 +6,18 @@
 
 第二部分：selenium Web端UI自动化
 
-第三部分：接口自动化
+第三部分：接口自动化HttpClient
 
     接口自动化，使用HttpClient发送GET或POST请求，本demo中包含
     
-    1.GET请求
-    2.携带参数和Cookies的GET请求
-    3.携带参数和Cookies的POST请求
+    一、依赖包
+        1.httpclient包
+        2.json包
+    二、配置文件
+        1.properties配置文件，用来存放接口地址
+    三、包名、类名
+        
+        
 
 第四部分：springboot简单demo
    
@@ -30,7 +35,6 @@
         1.application.yml 
           （一）配置端口号
           （二）配置日志文件目录
-          （三）配置数据库连接
         2.logback.xml
             固定写法
     三、包名、类名解释：
@@ -43,7 +47,10 @@
         4.controller包
             编写接口类。
 
-第五部分：工具类demo
+第五部分：TestNG
+
+
+第六部分：工具类demo
     
     一、读取properties文件
     
@@ -53,4 +60,4 @@
     
     四、百度OCR
     
-第六部分：其他demo
+第七部分：其他demo

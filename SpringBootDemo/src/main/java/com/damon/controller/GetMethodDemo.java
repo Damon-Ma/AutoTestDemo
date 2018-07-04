@@ -47,7 +47,7 @@ public class GetMethodDemo {
      * 携带cookie才能访问的get请求
      * */
     @ApiOperation(value = "要求客户端携带cookies访问",httpMethod = "GET")
-    @RequestMapping(value = "getwithcookie",method = RequestMethod.GET)
+    @RequestMapping(value = "/getwithcookie",method = RequestMethod.GET)
     public String getWithCookies(HttpServletRequest request){
         Cookie[] cookies = request.getCookies();
         if (Objects.isNull(cookies)){

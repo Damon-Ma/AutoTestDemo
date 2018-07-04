@@ -6,17 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AppiumDemo" />
         <module name="HttpClientDemo" />
-        <module name="SeleniumDemo" />
         <module name="SpringBootDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AppiumDemo" target="1.5" />
-      <module name="HttpClientDemo" target="1.5" />
+      <module name="HttpClientDemo" target="6" />
       <module name="SeleniumDemo" target="1.5" />
       <module name="SpringBootDemo" target="1.8" />
+      <module name="UtilDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
