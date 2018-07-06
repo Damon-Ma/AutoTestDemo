@@ -8,7 +8,9 @@
 
 第三部分：接口自动化HttpClient
 
-    接口自动化，使用HttpClient发送GET或POST请求，本demo中包含
+    接口自动化demo，使用HttpClient发送GET或POST请求，本demo中包含:
+        get请求、带参数的get请求、返回cookies的get请求、带cookies的get请求
+        post请求、带参数（kv格式/json格式）的post请求、返回cookies的post请求、带cookies的post请求
     
     一、依赖包
         1.httpclient包
@@ -16,6 +18,7 @@
     二、配置文件
         1.properties配置文件，用来存放接口地址
     三、包名、类名
+        util包中为格式化get请求参数的类
         
         
 
@@ -53,9 +56,19 @@
 第六部分：工具类demo
     
     一、读取properties文件
-    
+        使用ResourceBundle类
     二、mybatis
-    
+        1.引入依赖包：
+            mybatis
+            mysql-connector-java
+            lombok
+        2.创建数据库配置文件
+            DBConfig.xml
+        3.创建编写SQL语句的xml文件
+            SQLMapper.xml
+        4.创建model包
+            存放数据库中的键，使用lombok包中的Data注解，免写set/get方法    
+        5.
     三、openCV
     
     四、百度OCR

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="HttpClientDemo" />
         <module name="SpringBootDemo" />
+        <module name="Util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -15,6 +16,7 @@
       <module name="HttpClientDemo" target="6" />
       <module name="SeleniumDemo" target="1.5" />
       <module name="SpringBootDemo" target="1.8" />
+      <module name="Util" target="1.5" />
       <module name="UtilDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
