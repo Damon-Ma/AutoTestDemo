@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suitename">
+    <test name="runALL">
+        <classes>
+            <class name="com.damon.groups.GroupsOnClass1"/>
+            <class name="com.damon.groups.GroupsOnClass2"/>
+            <class name="com.damon.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+
+    <test name="onlyRunStu">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.damon.groups.GroupsOnClass1"/>
+            <class name="com.damon.groups.GroupsOnClass2"/>
+            <class name="com.damon.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+</suite>

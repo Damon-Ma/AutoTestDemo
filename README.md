@@ -20,8 +20,6 @@
     三、包名、类名
         util包中为格式化get请求参数的类
         
-        
-
 第四部分：springboot简单demo
    
     demo实现get请求接口，post请求接口，需要cookie/参数请求的接口
@@ -82,8 +80,20 @@
         1.GroupsOnMethod
             给测试用例添加分组，添加BeforeGroups和AfterGroups注解。
         2.GroupsOnClass
-        
-        
+            在类上面添加分组注解，然后在resources目录下创建xml文件来分类运行。
+    六、套件测试（suite）
+          从xml中启动,配置好结构就可以啦
+    七、依赖测试（DependTest）
+        1.用例直接存在依赖关系时可以用到 @Test(dependsOnMethods = {"case1"})注解  
+    八、异常测试（ExpectedException）
+        1.用例中传入错误的参数，需要程序抛出异常，使用异常测试可以判断是否和我们预期的异常一致        
+    九、多线程测试（multiThread）
+        1.在测试方法上面加注解（MultiThreadOnAnnotion）
+        2.在xml中添加参数（MultiThreadOnXML）    
+    十、参数化
+        1.通过xml文件参数化（ParamterTest）
+        2.通过注解参数化（DataProviderTest/DataProviderOnMethod）
+            通过DataProvider注解添加测试参数
                 
 第六部分：工具类demo
     

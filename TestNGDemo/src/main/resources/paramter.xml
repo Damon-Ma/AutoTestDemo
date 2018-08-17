@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="param">
+    <test name="MyParam1">
+        <parameter name = "name" value= "zhangsan"/>
+        <parameter name = "age" value= "10"/>
+        <classes>
+            <class name="com.damon.paramter.ParamterTest"/>
+        </classes>
+    </test>
+
+    <test name="MyParam2">
+        <parameter name = "name" value= "lisi"/>
+        <parameter name = "age" value= "12"/>
+        <classes>
+            <class name="com.damon.paramter.ParamterTest"/>
+        </classes>
+    </test>
+
+</suite>
