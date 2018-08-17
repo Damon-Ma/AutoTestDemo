@@ -5,9 +5,10 @@ import java.io.InputStreamReader;
 
 public class CMDTest {
 
-    static String result = "";
+    static String result;
 
-    public String cmdTest(String cmdCommand) {
+    public void cmdTest(String cmdCommand) {
+        //cmd命令
         String cmd = "cmd /c\"  " + cmdCommand;
 
         try {
@@ -17,20 +18,18 @@ public class CMDTest {
             BufferedReader bufferedReader = new BufferedReader
                     (new InputStreamReader(p.getInputStream()));
 
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
+            //读取返回结果，如果不为空就一直读取
+            while ((result = bufferedReader.readLine()) != null) {
+                System.out.println(result);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return result;
     }
 
     public static void main(String[] args){
         CMDTest cmdTest = new CMDTest();
-        String s = cmdTest.cmdTest("ping www.baidu.com");
-       // System.out.println(s);
+        cmdTest.cmdTest("ping www.baidu.com");
     }
 }
 
