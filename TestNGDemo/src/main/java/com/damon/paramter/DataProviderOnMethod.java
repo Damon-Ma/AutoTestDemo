@@ -11,11 +11,11 @@ public class DataProviderOnMethod {
      * */
     @Test(dataProvider = "methodData")
     public void test1(String name,int age){
-        System.out.println("根据方法传递参数1：name:" + name + "\tage:" + age);
+        System.out.println("根据方法传递参数1：name:" + name + "  age:" + age);
     }
     @Test(dataProvider = "methodData")
     public void test2(String name,int age){
-        System.out.println("根据方法传递参数2：name:" + name + "\tage:" + age);
+        System.out.println("根据方法传递参数2：name:" + name + "  age:" + age);
     }
 
     @DataProvider(name = "methodData")
