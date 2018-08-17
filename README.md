@@ -90,10 +90,14 @@
     九、多线程测试（multiThread）
         1.在测试方法上面加注解（MultiThreadOnAnnotion）
         2.在xml中添加参数（MultiThreadOnXML）    
-    十、参数化
+    十、参数化（paramter）
         1.通过xml文件参数化（ParamterTest）
         2.通过注解参数化（DataProviderTest/DataProviderOnMethod）
             通过DataProvider注解添加测试参数
+    十一、生成测试报告（report）
+        1.pom文件中添加依赖包（extentreports）        
+        2.创建ExtentTestNGIReporterListener类（固定写法，用于生成测试报告）
+        3.在xml文件中添加监听
                 
 第六部分：工具类demo
     
@@ -120,3 +124,5 @@
         1.pom文件中添加百度OCR的依赖包
         
 第七部分：其他demo
+    
+    一、CMD

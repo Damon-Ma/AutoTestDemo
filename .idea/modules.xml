@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AutoTestDemo.iml" filepath="$PROJECT_DIR$/.idea/AutoTestDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/HttpClientDemo/HttpClientDemo.iml" filepath="$PROJECT_DIR$/HttpClientDemo/HttpClientDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Others/Others.iml" filepath="$PROJECT_DIR$/Others/Others.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootDemo/SpringBootDemo.iml" filepath="$PROJECT_DIR$/SpringBootDemo/SpringBootDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestNGDemo/TestNGDemo.iml" filepath="$PROJECT_DIR$/TestNGDemo/TestNGDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Util/Util.iml" filepath="$PROJECT_DIR$/Util/Util.iml" />
