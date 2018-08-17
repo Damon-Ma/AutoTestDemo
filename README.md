@@ -52,7 +52,39 @@
 
 第五部分：TestNG
 
-
+    一、pom中添加testng的依赖
+    二、基本注解（BasicAnnotation）
+        1.Test
+        2.BeforeMethod
+        3.AfterMethod
+        4.BeforeClass
+        5.AfterClass
+        6.BeforeSuite
+        7.AfterSuite
+            执行顺序：
+                BeforeSuite
+                    BeforeClass
+                        BeforeMethod
+                             测试用例1
+                        AfterMethod
+                        BeforeMethod
+                            测试用例2
+                        AfterMethod
+                    AfterClass
+                AfterSuite
+    三、忽略测试（IgnoreTest）
+        1.Test(enabled = false)
+            enabled默认值为true，enabled=false时，该条用例将被忽略。
+    四、超时测试（TimeOutTest ）
+        1.Test(timeOut = 300)
+            timeOut设置超时时间，若用例执行时间超过设定的执行时间，则算作执行失败，并抛出超时异常。
+    五、组测试（groups）
+        1.GroupsOnMethod
+            给测试用例添加分组，添加BeforeGroups和AfterGroups注解。
+        2.GroupsOnClass
+        
+        
+                
 第六部分：工具类demo
     
     一、读取properties文件
@@ -68,9 +100,13 @@
             SQLMapper.xml
         4.创建model包
             存放数据库中的键，使用lombok包中的Data注解，免写set/get方法    
-        5.
+
     三、openCV
-    
+        1.下载openCV安装包
+        2.添加openCV依赖包（在安装的OpenCV下）
+        3.配置运行参数(在run Config里面设置VM options为：-Djava.library.path=F:/opencv/build/java/x64;F:/opencv/build/x64/vc14/bin）
+        
     四、百度OCR
-    
+        1.pom文件中添加百度OCR的依赖包
+        
 第七部分：其他demo

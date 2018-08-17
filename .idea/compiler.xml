@@ -8,14 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="HttpClientDemo" />
         <module name="SpringBootDemo" />
+        <module name="TestNGDemo" />
         <module name="Util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AppiumDemo" target="1.5" />
-      <module name="HttpClientDemo" target="6" />
+      <module name="HttpClientDemo" target="1.5" />
       <module name="SeleniumDemo" target="1.5" />
       <module name="SpringBootDemo" target="1.8" />
+      <module name="TestNGDemo" target="1.5" />
       <module name="Util" target="1.5" />
       <module name="UtilDemo" target="1.5" />
     </bytecodeTargetLevel>
