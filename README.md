@@ -126,3 +126,15 @@
 第七部分：其他demo
     
     一、CMD
+    二、性能测试自定义JMeter插件(com.damon.test)
+        1.实现方式：
+            ①继承AbstractJavaSamplerClient抽象类
+            ②实现JavaSamplerClient接口
+        2.依赖（版本和本地JMeter版本一致）：
+            ApacheJMeter_core
+            ApacheJMeter_java
+            函数助手依赖：(com.damon.functions)
+            ApacheJMeter_functions
+        3.使用mvn clean package打包
+        4.打包好的jar放到/jmeter/lib/ext/目录下
+        5.启动JMeter，添加java请求

@@ -8,5 +8,32 @@
     <artifactId>Others</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <!--解决编译时使用GBK中文显示乱码问题-->
+    <properties>
+        <project.build.sourceEncoding>
+            UTF-8
+        </project.build.sourceEncoding>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter_java</artifactId>
+            <version>4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter_core</artifactId>
+            <version>4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter_functions</artifactId>
+            <version>4.0</version>
+        </dependency>
+
+    </dependencies>
 </project>

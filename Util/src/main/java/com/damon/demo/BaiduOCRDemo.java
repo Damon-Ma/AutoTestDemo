@@ -16,7 +16,7 @@ public class BaiduOCRDemo {
     public static void main(String[] args) {
         BaiduOCRDemo bod = new BaiduOCRDemo();
         String msg = bod.getMsg();
-       // System.out.println(msg);
+        System.out.println(msg);
     }
 
     //
@@ -43,6 +43,8 @@ public class BaiduOCRDemo {
 
         //获取识别到的文字
         String result = res.get("words_result").toString();
+
+
         //写一个正则表达式
         Pattern p = Pattern.compile("\".*?\"");
         //用正则表达式匹配
