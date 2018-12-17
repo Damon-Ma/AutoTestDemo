@@ -6,3 +6,9 @@ logging:
 spring:
   application:
     name: SpringbootDemo
+
+#最大文件大小。值可以使用后缀“MB”或“KB”。指示兆字节或千字节大小。
+  servlet:
+    multipart.max-file-size: 10MB
+  # 最大请求大小可以是mb也可以是kb
+    multipart.max-request-size: 10MB

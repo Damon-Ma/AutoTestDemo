@@ -16,7 +16,7 @@
     <bytecodeTargetLevel>
       <module name="AppiumDemo" target="1.5" />
       <module name="CMD" target="1.5" />
-      <module name="HttpClientDemo" target="1.5" />
+      <module name="HttpClientDemo" target="6" />
       <module name="Others" target="1.5" />
       <module name="SeleniumDemo" target="1.5" />
       <module name="SpringBootDemo" target="1.8" />
@@ -24,5 +24,10 @@
       <module name="Util" target="1.5" />
       <module name="UtilDemo" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBootDemo" options="-parameters" />
+    </option>
   </component>
 </project>
